@@ -1,5 +1,5 @@
 /**
- * app.js — bilingual (EN / ZH) portfolio renderer.
+ * app.js — bilingual (EN / ZH) portfolio renderer. 
  * No build step required; open index.html directly in a browser.
  */
 (function () {
