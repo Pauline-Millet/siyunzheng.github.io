@@ -1,5 +1,5 @@
 /**
- * PROJECT DATA
+ * PROJECT DATA 
  * Edit this file to update project content or swap in real images.
  * Replace placeholderTone with: cover: "images/your-photo.jpg"
  */ 
