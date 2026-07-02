@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Siyun Zheng — Portfolio</title>
-<meta name="description" content="Siyun Zheng — multidisciplinary product designer working across interactive products, wearable systems and technology-driven experiences.">
+<meta name="description" content="Siyun Zheng — visual designer and creative practitioner working across image, interaction, space and emerging technology.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,10 +17,11 @@
   <div class="wrap">
     <a class="site-name" href="#top">Siyun Zheng <span class="zh">郑斯匀</span></a>
     <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="cv.pdf">CV</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#work"    data-t="navWork">Work</a></li>
+      <li><a href="#about"   data-t="navAbout">About</a></li>
+      <li><a href="cv.pdf"   data-t="navCV">CV <span class="confirm">TO CONFIRM</span></a></li>
+      <li><a href="#contact" data-t="navContact">Contact</a></li>
+      <li><button id="lang-toggle" class="lang-btn" aria-label="Switch language">中文</button></li>
     </ul>
   </div>
 </nav>
@@ -30,22 +31,16 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="wrap">
-      <p class="hero-eyebrow">Multidisciplinary product designer</p>
-      <h1>Siyun Zheng</h1>
-      <p class="hero-tagline">Create interactive products, wearable systems, and technology-driven experiences through physical prototyping and visual storytelling.</p>
+      <p class="hero-eyebrow" data-t="heroEyebrow">Visual designer &amp; creative practitioner</p>
+      <h1>Siyun Zheng<span class="zh"></span></h1>
+      <p class="hero-tagline" data-t="heroTagline">
+        Visual designer and creative practitioner working across image, interaction,
+        space and emerging technology.
+      </p>
       <div class="hero-meta">
-        <div>
-          <span>Based in</span>
-          <strong>London, UK</strong>
-        </div>
-        <div>
-          <span>Background</span>
-          <strong>Product Design (BA) &mdash; Creative Robotics (MSc)</strong>
-        </div>
-        <div>
-          <span>Current focus</span>
-          <strong>Product Design &amp; Interaction Prototyping</strong>
-        </div>
+        <div><span data-t="heroBasedLabel">Based in</span><strong data-t="heroBasedVal">London / Beijing</strong></div>
+        <div><span data-t="heroBgLabel">Background</span><strong data-t="heroBgVal">Product Design (BA) — Creative Robotics (MSc)</strong></div>
+        <div><span data-t="heroFocusLabel">Current focus</span><strong data-t="heroFocusVal">Image Experience Design</strong></div>
       </div>
     </div>
   </section>
@@ -55,10 +50,12 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <p class="section-eyebrow">Selected Work</p>
-          <h2 class="section-title">Projects across product design, interaction and technology</h2>
+          <p class="section-eyebrow" data-t="workEyebrow">Selected Works</p>
+          <h2 class="section-title" data-t="workTitle">Five projects across image, interaction and space</h2>
         </div>
-        <p class="section-note">Explore the research, prototypes and design decisions behind each project.</p>
+        <p class="section-note" data-t="workNote">
+          Click a project to read its full process, key decisions and reflection.
+        </p>
       </div>
       <div class="work-grid" id="work-grid"></div>
     </div>
@@ -67,77 +64,81 @@
   <!-- ABOUT -->
   <section class="section" id="about">
     <div class="wrap about-grid">
-
       <div class="about-bio">
-        <p class="section-eyebrow">About</p>
-        <h2 class="section-title">Product design through research and prototyping</h2>
-        <p>I am a product designer and creative technologist based in London, with a background in Product Design at the Central Academy of Fine Arts and Creative Robotics at University of the Arts London.</p>
-        <p>My work combines design research, physical prototyping and emerging technologies to create interactive products, wearable systems and responsive experiences. I am particularly interested in how movement, sensory feedback and intelligent behaviour can support communication and emotional expression.</p>
-        <p>I develop projects from early research and concept development through interaction design, mechanical structures, electronics and working prototypes. Alongside technical development, I use visual communication and documentation to make complex ideas clear and accessible.</p>
-        <p>I am currently seeking opportunities in product design, interaction design and creative technology, with a particular interest in research-led projects and hands-on prototyping.</p>
+        <p class="section-eyebrow" data-t="aboutEyebrow">About</p>
+        <h2 class="section-title" style="margin-bottom:24px;" data-t="aboutTitle">Working across image, interaction and physical making</h2>
+        <p data-t="aboutP1">I am a visual designer and creative practitioner with a background in product design and creative robotics.</p>
+        <p data-t="aboutP2">My current research, based at the Central Academy of Fine Arts School of Design, focuses on image experience design.</p>
+        <p data-t="aboutP3">I'm not looking to be defined as a single discipline.</p>
       </div>
 
       <div class="about-side">
+        <h3 data-t="eduTitle">Education</h3>
+        <ul>
+          <li><strong data-t="edu1">Central Academy of Fine Arts — BA Product Design, 2020–2024</strong></li>
+          <li data-t="edu2">Outstanding Graduate, 2024 · Second-Class Scholarship, 2023</li>
+          <li><span data-t="edu3">University of the Arts London, Creative Computing Institute — MSc Creative Robotics, 2024–2025</span> <span class="confirm">TO CONFIRM</span></li>
+          <li><span data-t="edu4">Current research — Central Academy of Fine Arts, School of Design: Image Experience Design</span> <span class="confirm">TO CONFIRM</span></li>
+        </ul>
 
-        <h3>Education</h3>
-        <div class="edu-list">
-          <div class="edu-item">
-            University of the Arts London
-            <strong>MSc Creative Robotics, Distinction, 2024&ndash;2026</strong>
+        <h3 data-t="skillsTitle">Core skills</h3>
+        <div class="about-skills">
+          <div>
+            <h4 data-t="skillCat1">Visual &amp; Graphic</h4>
+            <ul>
+              <li>Editorial design &amp; typography</li>
+              <li>Layout systems</li>
+              <li>Visual identity</li>
+              <li>Photoshop / Illustrator / InDesign</li>
+            </ul>
           </div>
-          <div class="edu-item">
-            Central Academy of Fine Arts
-            <strong>Bachelor&rsquo;s Degree in Product Design, 2020&ndash;2024</strong>
-            <span>Outstanding Graduate, 2024</span>
-            <span>Second-Class Scholarship, 2023</span>
+          <div>
+            <h4 data-t="skillCat2">Interaction &amp; Technology</h4>
+            <ul>
+              <li>Arduino, sensor-based interaction</li>
+              <li>TouchDesigner, OSC</li>
+              <li>Physical computing, wearables</li>
+              <li>Basic Python, PyTorch</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-t="skillCat3">Product &amp; Spatial</h4>
+            <ul>
+              <li>Physical prototyping &amp; model making</li>
+              <li>Fusion 360</li>
+              <li>Installation &amp; exhibition setup</li>
+              <li>Design research</li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-t="skillCat4">Photography</h4>
+            <ul>
+              <li>Portrait &amp; still life</li>
+              <li>Studio lighting</li>
+              <li>Event &amp; installation documentation</li>
+            </ul>
           </div>
         </div>
 
-        <h3>Core Skills</h3>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h4>Product Design &amp; Prototyping</h4>
-            <p>Design research &middot; Concept development &middot; Sketching &middot; 3D modelling &middot; Physical prototyping &middot; Iterative testing</p>
-          </div>
-          <div class="skill-group">
-            <h4>Interaction &amp; Technology</h4>
-            <p>Arduino &middot; Sensors and actuators &middot; Physical computing &middot; Wearable robotics &middot; TouchDesigner &middot; Python</p>
-          </div>
-          <div class="skill-group">
-            <h4>Visual Communication</h4>
-            <p>Adobe Photoshop &middot; Illustrator &middot; InDesign &middot; Editorial design &middot; Presentation design</p>
-          </div>
-          <div class="skill-group">
-            <h4>Design Research &amp; Collaboration</h4>
-            <p>Precedent research &middot; Research synthesis &middot; Interaction mapping &middot; Prototype evaluation &middot; Team collaboration &middot; Design storytelling</p>
-          </div>
-        </div>
-
-        <h3>Availability</h3>
-        <div class="avail-list">
-          <div>Based in London, UK</div>
-          <div>Full right to work under the UK Graduate Visa</div>
-          <div>Available for full-time opportunities</div>
-        </div>
-
+        <h3 data-t="recogTitle">Recognition</h3>
+        <ul>
+          <li data-t="recog1">Central Academy of Fine Arts, Outstanding Graduate, 2024</li>
+          <li data-t="recog2">Second-Class Scholarship, 2023</li>
+          <li><span data-t="recog3">"九张牌" 48-hour board game competition, winner, 2023</span> <span class="confirm">TO CONFIRM</span></li>
+          <li data-t="recog4">Volunteer, Future Academic Forum (未·未来论坛)</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact-section" id="contact">
-    <div class="wrap contact-inner">
-      <h2 class="contact-title">Open to early-career roles in product design, interaction and creative technology.</h2>
+  <section class="section" id="contact" style="border-bottom:none;">
+    <div class="wrap contact-row">
+      <h2 class="contact-title" data-t="contactTitle">Open to early-career roles in visual, interaction and experience design.</h2>
       <div class="contact-links">
-        <a href="mailto:xiaomicom3@gmail.com">
-          <span class="icon">&#9993;</span> xiaomicom3@gmail.com
-        </a>
-        <a href="https://www.linkedin.com/in/siyun-zheng-32539033a" target="_blank" rel="noopener">
-          <span class="icon">in</span> LinkedIn
-        </a>
-        <a href="cv.pdf" download>
-          <span class="icon">&#8595;</span> Download CV
-        </a>
+        <a href="mailto:xiaomicom3@gmail.com">xiaomicom3@gmail.com</a>
+        <a href="#"><span data-t="linkedinLabel">LinkedIn</span> <span class="confirm">TO CONFIRM</span></a>
+        <a href="cv.pdf"><span data-t="cvLabel">Download CV</span> <span class="confirm">TO CONFIRM</span></a>
       </div>
     </div>
   </section>
@@ -145,9 +146,9 @@
 </main>
 
 <footer>
-  <div class="wrap">
-    <span>&copy; 2026 Siyun Zheng</span>
-    <span>London / Beijing</span>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+    <span>© 2026 Siyun Zheng</span>
+    <span data-t="footerRight">London / Beijing</span>
   </div>
 </footer>
 
@@ -156,7 +157,7 @@
   <div class="detail-bar">
     <div class="wrap">
       <span class="site-name">Siyun Zheng</span>
-      <button class="detail-close" id="detail-close">Close &#10005;</button>
+      <button class="detail-close" id="detail-close">Close ✕</button>
     </div>
   </div>
   <div class="detail-body">
