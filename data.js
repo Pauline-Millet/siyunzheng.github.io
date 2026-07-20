@@ -136,38 +136,6 @@ const PROJECTS = [
     "Concept Prototyping"
   ],
 },
-  {
-    id: "visual-communication-archive",
-    title: "Visual Communication Archive",
-    year: "",
-    projectType: "",
-    category: "Visual Communication / Identity Design / Typography",
-    placeholderTone: "tone-e",
-    oneLiner: "A curated selection of identity, poster and typographic work demonstrating visual systems, layout and image-making skills across collaborative and self-initiated projects.",
-    context: "This entry brings together several independent graphic and communication projects: poster and lettering experiments, layout work for personal documents, visual exploration connected to urban identity contexts, and participation in collaborative logo and branding processes.",
-    designQuestion: "How do typographic and identity decisions change depending on whether the audience is a brand, a city, or a single reader?",
-    process: "Each project was developed separately rather than as one campaign, allowing the approach to shift depending on context and audience — from tight editorial systems to more expressive identity work.",
-    keyDecisions: "For any project involving a team or external client, the entry is careful not to overstate individual contribution until the full scope can be confirmed.",
-    outcome: "A set of individual graphic pieces demonstrating range across identity, typography and editorial layout.",
-    reflection: "Keeping these as separate, honestly-scoped entries felt more accurate than bundling them into one polished identity project narrative.",
-    tools: ["Adobe Illustrator", "Adobe InDesign", "Adobe Photoshop", "Typography"],
-  },
-  {
-    id: "independent-practice",
-    title: "Independent Practice",
-    year: "",
-    projectType: "",
-    category: "Photography / 3D Modelling / Coding",
-    placeholderTone: "tone-f",
-    oneLiner: "A collection of self-directed visual and technical studies used to develop skills in observation, form-making, digital prototyping and interactive experimentation.",
-    context: "Ongoing self-initiated work spanning photography, 3D modelling and coding experiments. These projects sit outside formal briefs and serve as a space for developing visual and technical fluency, testing ideas and building new skills.",
-    designQuestion: null,
-    process: "Work spans portrait and still-life photography using Canon 5D Mark IV and Sony NEX-5T, 3D modelling and form exploration, and coding experiments including machine-learning exercises using PyTorch and CNN architectures for image classification.",
-    keyDecisions: null,
-    outcome: "A growing body of personal work organised by medium, used to inform and feed back into practice-based projects.",
-    reflection: "Independent practice is where I test composition, light, form and interaction decisions outside of a formal brief — it directly informs how I approach research and visual communication within project work.",
-    tools: ["Canon 5D Mark IV", "Sony NEX-5T", "Python", "PyTorch", "Fusion 360", "Studio lighting"],
-  },
 ];
 
 if (typeof module !== 'undefined') { module.exports = { PROJECTS }; }
